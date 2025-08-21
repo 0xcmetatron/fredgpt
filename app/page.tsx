@@ -292,7 +292,7 @@ export default function PutinGPT() {
 
             <div className="flex items-center gap-2">
               <img src="/imagine-gpt-logo.png" alt="PutinGPT" className="w-6 h-6 rounded" />
-              <span className="font-semibold">PutinGPT</span>
+              <span className="font-semibold">FredGPT</span>
             </div>
           </div>
 
@@ -306,7 +306,7 @@ export default function PutinGPT() {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => window.open("https://x.com/putingpt_ai", "_blank")}
+              onClick={() => window.open("https://x.com/FredGPTSolana", "_blank")}
               title="Follow us on X.com"
               className="hover:bg-accent hover:text-accent-foreground"
             >
@@ -343,7 +343,7 @@ export default function PutinGPT() {
               <div className="mb-8">
                 <img src="/imagine-gpt-logo.png" alt="PutinGPT" className="w-16 h-16 mx-auto mb-4 rounded-xl" />
                 <h1 className="text-3xl font-bold mb-2">How can I help you today?</h1>
-                <p className="text-muted-foreground">I'm PutinGPT, your AI assistant. Ask me anything!</p>
+                <p className="text-muted-foreground">I'm FredGPT, your AI assistant. Ask me anything!</p>
               </div>
             </div>
           ) : (
@@ -447,7 +447,7 @@ export default function PutinGPT() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyPress={handleKeyPress}
-                  placeholder="Message PutinGPT..."
+                  placeholder="Message FredGPT..."
                   className="flex-1 border-0 bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-muted-foreground/70 text-base"
                   disabled={isLoading}
                 />
@@ -471,7 +471,7 @@ export default function PutinGPT() {
             </div>
 
             <p className="text-xs text-muted-foreground text-center mt-3">
-              PutinGPT can make mistakes. Consider checking important information.
+              FredGPT can make mistakes. Consider checking important information.
             </p>
           </div>
         </div>
