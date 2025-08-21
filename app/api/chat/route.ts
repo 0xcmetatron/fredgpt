@@ -61,7 +61,7 @@ export async function POST(request: NextRequest) {
           codeModelMode: true,
           trendingAgentMode: {},
           isMicMode: false,
-          userSystemPrompt: "You are PutinGPT, an AI assistant. Your name is PutinGPT.",
+          userSystemPrompt: "You are FredGPT, an AI assistant. Your name is FredGPT.",
           maxTokens: 99999,
           playgroundTopP: null,
           playgroundTemperature: null,
@@ -84,10 +84,10 @@ export async function POST(request: NextRequest) {
           vscodeClient: false,
           codeInterpreterMode: false,
           customProfile: {
-            name: "PutinGPT",
+            name: "FredGPT",
             occupation: "AI Assistant",
             traits: ["helpful", "knowledgeable", "friendly"],
-            additionalInfo: "I am PutinGPT, an AI assistant here to help with various tasks and questions.",
+            additionalInfo: "I am FredGPT, an AI assistant here to help with various tasks and questions.",
             enableNewChats: false,
           },
           webSearchModeOption: {
