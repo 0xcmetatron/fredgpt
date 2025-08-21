@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Updated design tokens following the modern design brief */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%; /* Updated to ChatGPT-style neutral colors */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%; /* Updated to ChatGPT-style neutral colors */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%; /* Updated to ChatGPT-style neutral colors */
+
+    --primary: 0 0% 9%; /* Updated to ChatGPT-style neutral colors */
+    --primary-foreground: 0 0% 98%; /* Updated to ChatGPT-style neutral colors */
+
+    --secondary: 0 0% 96%; /* Updated to ChatGPT-style neutral colors */
+    --secondary-foreground: 0 0% 9%; /* Updated to ChatGPT-style neutral colors */
+
+    --muted: 0 0% 96%; /* Updated to ChatGPT-style neutral colors */
+    --muted-foreground: 0 0% 45%; /* Updated to ChatGPT-style neutral colors */
+
+    --accent: 0 0% 96%; /* Updated to ChatGPT-style neutral colors */
+    --accent-foreground: 0 0% 9%; /* Updated to ChatGPT-style neutral colors */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%; /* Updated to ChatGPT-style neutral colors */
+
+    --border: 0 0% 90%; /* Updated to ChatGPT-style neutral colors */
+    --input: 0 0% 96%; /* Updated to ChatGPT-style neutral colors */
+    --ring: 0 0% 9%; /* Updated to ChatGPT-style neutral colors */
+
+    --sidebar: 0 0% 98%; /* Updated to ChatGPT-style neutral colors */
+    --sidebar-foreground: 0 0% 9%; /* Updated to ChatGPT-style neutral colors */
+    --sidebar-primary: 0 0% 96%; /* Updated to ChatGPT-style neutral colors */
+    --sidebar-primary-foreground: 0 0% 9%; /* Updated to ChatGPT-style neutral colors */
+    --sidebar-accent: 0 0% 96%; /* Updated to ChatGPT-style neutral colors */
+    --sidebar-accent-foreground: 0 0% 9%; /* Updated to ChatGPT-style neutral colors */
+    --sidebar-border: 0 0% 90%; /* Updated to ChatGPT-style neutral colors */
+    --sidebar-ring: 0 0% 9%; /* Updated to ChatGPT-style neutral colors */
+
+    --radius: 0.75rem; /* Updated to ChatGPT-style neutral colors */
+  }
+
+  .dark {
+    /* Updated dark mode tokens for better contrast and modern look */
+    --background: 0 0% 8%; /* Updated to ChatGPT dark mode colors */
+    --foreground: 0 0% 98%; /* Updated to ChatGPT dark mode colors */
+
+    --card: 0 0% 8%; /* Updated to ChatGPT dark mode colors */
+    --card-foreground: 0 0% 98%; /* Updated to ChatGPT dark mode colors */
+
+    --popover: 0 0% 8%; /* Updated to ChatGPT dark mode colors */
+    --popover-foreground: 0 0% 98%; /* Updated to ChatGPT dark mode colors */
+
+    --primary: 0 0% 98%; /* Updated to ChatGPT dark mode colors */
+    --primary-foreground: 0 0% 9%; /* Updated to ChatGPT dark mode colors */
+
+    --secondary: 0 0% 15%; /* Updated to ChatGPT dark mode colors */
+    --secondary-foreground: 0 0% 98%; /* Updated to ChatGPT dark mode colors */
+
+    --muted: 0 0% 15%; /* Updated to ChatGPT dark mode colors */
+    --muted-foreground: 0 0% 64%; /* Updated to ChatGPT dark mode colors */
+
+    --accent: 0 0% 15%; /* Updated to ChatGPT dark mode colors */
+    --accent-foreground: 0 0% 98%; /* Updated to ChatGPT dark mode colors */
+
+    --destructive: 0 62% 30%; /* Updated to ChatGPT dark mode colors */
+    --destructive-foreground: 0 0% 98%; /* Updated to ChatGPT dark mode colors */
+
+    --border: 0 0% 15%; /* Updated to ChatGPT dark mode colors */
+    --input: 0 0% 15%; /* Updated to ChatGPT dark mode colors */
+    --ring: 0 0% 83%; /* Updated to ChatGPT dark mode colors */
+
+    --sidebar: 0 0% 8%; /* Updated to ChatGPT dark mode colors */
+    --sidebar-foreground: 0 0% 98%; /* Updated to ChatGPT dark mode colors */
+    --sidebar-primary: 0 0% 15%; /* Updated to ChatGPT dark mode colors */
+    --sidebar-primary-foreground: 0 0% 98%; /* Updated to ChatGPT dark mode colors */
+    --sidebar-accent: 0 0% 15%; /* Updated to ChatGPT dark mode colors */
+    --sidebar-accent-foreground: 0 0% 98%; /* Updated to ChatGPT dark mode colors */
+    --sidebar-border: 0 0% 15%; /* Updated to ChatGPT dark mode colors */
+    --sidebar-ring: 0 0% 83%; /* Updated to ChatGPT dark mode colors */
+  }
+}
+
+/* Updated font imports for better ChatGPT-like typography */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; /* Updated font imports */
+}
+
+#__next {
+  height: 100%;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Updated scrollbar styling to match ChatGPT */
+::-webkit-scrollbar {
+  width: 4px; /* Updated scrollbar styling */
+  height: 4px; /* Updated scrollbar styling */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Updated scrollbar styling */
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border)); /* Updated scrollbar styling */
+  border-radius: 2px; /* Updated scrollbar styling */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground)); /* Updated scrollbar styling */
+}
+
+/* Smoother transitions for better UX */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; /* Smoother transitions */
+}
