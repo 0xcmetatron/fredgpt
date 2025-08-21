@@ -17,29 +17,29 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: "PutinGPT – First Uncensored AI",
-  description: "PutinGPT is the first uncensored AI that helps you generate powerful prompts and viral video ideas.",
+  title: "FredGPT – First Uncensored AI",
+  description: "FredGPT is the first uncensored AI that helps you generate powerful prompts and viral video ideas.",
   generator: "v0.dev",
-  metadataBase: new URL("https://putingpt.fun"),
+  metadataBase: new URL("https://fredgpt.fun"),
   openGraph: {
-    title: "PutinGPT – First Uncensored AI",
-    description: "PutinGPT is the first uncensored AI that helps you generate powerful prompts and viral video ideas.",
-    url: "https://putingpt.fun",
-    siteName: "PutinGPT",
+    title: "FredGPT – First Uncensored AI",
+    description: "FredGPT is the first uncensored AI that helps you generate powerful prompts and viral video ideas.",
+    url: "https://fredgpt.fun",
+    siteName: "FredGPT",
     images: [
       {
         url: "/imagine-gpt-logo.png",
         width: 500,
         height: 500,
-        alt: "PutinGPT Logo",
+        alt: "FredGPT Logo",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PutinGPT – First Uncensored AI",
-    description: "PutinGPT is the first uncensored AI that helps you generate powerful prompts and viral video ideas.",
+    title: "FredGPT – First Uncensored AI",
+    description: "FredGPT is the first uncensored AI that helps you generate powerful prompts and viral video ideas.",
     images: ["/imagine-gpt-logo.png"],
   },
   icons: {
